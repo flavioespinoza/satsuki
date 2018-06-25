@@ -1,0 +1,800 @@
+html {
+  color: #9699b0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-weight: 300;
+  color: #9699b0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; }
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 4px 13px; }
+
+li {
+  padding: 2px; }
+
+#mainHeader {
+  background: #191C29 !important; }
+
+.fr {
+  float: right; }
+
+.loading {
+  text-align: center;
+  padding: 12px; }
+
+.header {
+  padding-left: 12px;
+  background-color: #607d8b;
+  color: white; }
+
+#chartWrapper {
+  width: calc(100% - 428px) !important;
+  height: calc(100% - 8px) !important;
+  float: left;
+  padding-left: 8px;
+  padding-top: 8px;
+  background: #363d56 !important; }
+
+#sideBarWrapper {
+  position: absolute;
+  right: 0 !important;
+  top: 0 !important;
+  width: 420px;
+  height: calc(100% - 8px) !important;
+  padding-top: 8px;
+  background: #363d56 !important;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+#chartControls {
+  width: 100% !important; }
+
+#buySellContainer,
+#autoTrade,
+#balances,
+#spreadsheet,
+#cancelBtns,
+#controlButtons,
+#orderViewToggle,
+#ordersWrapper,
+#dropDownMenuParadigm,
+#spreadsheet {
+  width: 405px;
+  margin-left: 8px;
+  float: left;
+  margin-bottom: 8px;
+  overflow: hidden; }
+
+#controlButtons {
+  height: 119px !important; }
+
+#orderViewToggle {
+  min-height: 10px !important; }
+
+#ordersWrapper {
+  position: relative;
+  height: 300px;
+  margin-bottom: 0 !important;
+  background: #696d80 !important; }
+
+#orderList, #orderInfo {
+  position: absolute;
+  top: 0;
+  width: 194px;
+  height: 300px;
+  float: left;
+  overflow-y: scroll; }
+
+#orderList {
+  left: 8px;
+  top: 8px;
+  height: 280px; }
+
+.mdl-list__item {
+  margin-bottom: 4px; }
+
+#orderInfo {
+  right: 0; }
+  #orderInfo ul li:first-child div.order-info-content {
+    font-size: 9px !important; }
+
+.btn-controls {
+  width: calc(54% - 42px) !important;
+  margin: 11px; }
+
+#orderSide {
+  width: 100%; }
+
+.order-list, .order-info {
+  border-top: 1px solid gainsboro;
+  padding: 0 !important;
+  width: 168px;
+  height: 320px;
+  float: left;
+  overflow-y: scroll; }
+
+.order-info {
+  border-left: 1px solid gainsboro; }
+
+#orders, #orderHistory {
+  width: 336px;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid gainsboro; }
+
+.order-list-item {
+  width: 90%;
+  border-bottom: none !important; }
+
+.order-list-text {
+  font-size: 9px; }
+
+.order-list-info {
+  float: left;
+  height: 12px;
+  font-size: 11px;
+  line-height: 17px;
+  margin-left: 8px; }
+
+.order-wrapper {
+  position: relative;
+  height: 24px; }
+
+.order-selected-sell {
+  font-family: "Helvetica Neue";
+  background-color: rgba(255, 105, 180, 0.5);
+  color: white; }
+  .order-selected-sell .order-list-item {
+    color: white !important; }
+  .order-selected-sell .cancel-order-btn {
+    color: white !important; }
+
+.order-selected-buy {
+  background-color: rgba(100, 149, 237, 0.5);
+  color: white; }
+  .order-selected-buy .order-list-item {
+    color: white !important; }
+  .order-selected-buy .cancel-order-btn {
+    color: white !important; }
+
+.cancel-pending {
+  opacity: .15; }
+
+.cancel-order-btn {
+  width: 10%;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.mdl-list__item {
+  font-size: 9px !important;
+  padding: 4px !important;
+  min-height: 24px !important;
+  max-height: 24px !important;
+  color: #9e9e9e; }
+  .mdl-list__item div {
+    padding-left: 18px;
+    width: 100%;
+    color: white; }
+
+label {
+  color: #9e9e9e; }
+
+.order-list-item {
+  cursor: pointer;
+  height: 24px !important; }
+
+.mdl-button .material-icons {
+  vertical-align: middle;
+  font-size: 16px; }
+
+.r-button div div div {
+  margin-right: 6px !important; }
+
+.radio-card {
+  width: 60% !important;
+  min-height: 48px !important;
+  margin-bottom: 4px;
+  float: left; }
+
+.radio {
+  width: 96px !important;
+  font-size: 0.64em !important;
+  float: left;
+  padding-left: 12px !important; }
+  .radio div div div svg path {
+    fill: #9e9e9e; }
+
+.radio-notice {
+  width: 96px !important;
+  font-size: 0.64em !important;
+  float: left;
+  padding-left: 12px !important; }
+  .radio-notice div div div svg path {
+    fill: red; }
+
+#marketSymbol {
+  display: inline-block;
+  width: 96px;
+  text-align: center; }
+
+.market-notice-header {
+  background-color: red !important; }
+  .market-notice-header #user {
+    color: white !important; }
+
+.market-notice-title {
+  color: white !important; }
+
+.market-notice-warning {
+  color: white !important;
+  font-size: 14px; }
+
+.delisted {
+  padding: 12px; }
+
+#chartInterval {
+  margin-left: 42px;
+  width: 498px !important;
+  border-radius: 0;
+  padding: 0 !important;
+  min-height: 24px !important;
+  height: 24px !important;
+  margin-bottom: 0 !important;
+  background: gainsboro !important; }
+  #chartInterval .radio {
+    width: 56px !important;
+    padding-right: 12px;
+    border-left: 1px solid #4b4b4b; }
+
+.side-group {
+  border-top: 1px solid gainsboro;
+  padding-left: 12px; }
+  .side-group .radio {
+    cursor: pointer;
+    overflow: visible;
+    display: table;
+    height: 24px;
+    width: 108px !important;
+    background: white;
+    margin-bottom: 6px;
+    font-size: 11px;
+    border-radius: 2px;
+    padding-left: 8px !important; }
+
+#allMarkets .radio {
+  padding-bottom: 6px;
+  padding-top: 6px;
+  width: calc(100% - 12px) !important;
+  font-size: 14px !important;
+  border-bottom: 1px solid gainsboro;
+  margin-left: 12px !important;
+  padding-left: 0 !important; }
+#allMarkets .radio-notice {
+  padding-bottom: 6px;
+  padding-top: 6px;
+  width: calc(100% - 12px) !important;
+  font-size: 14px !important;
+  color: red !important;
+  border-bottom: 1px solid red;
+  margin-left: 12px !important;
+  padding-left: 0 !important; }
+
+#chart {
+  width: 100% !important;
+  height: calc(100% - 8px) !important; }
+
+.paradigm-group, .side-group {
+  padding-top: 8px;
+  width: calc(100% - 8px) !important;
+  overflow: hidden; }
+
+.paradigm-list-item {
+  width: 100%;
+  height: 28px;
+  overflow: hidden; }
+  .paradigm-list-item .input {
+    width: 25%;
+    height: 20px;
+    text-align: right;
+    padding-right: 4px;
+    background: gainsboro;
+    border: 1px solid darkgray; }
+  .paradigm-list-item #inputPrcent_0, .paradigm-list-item #inputAmount_0 {
+    background: white;
+    border: 1px solid white; }
+  .paradigm-list-item .__percent_input-label {
+    position: absolute;
+    top: 4px;
+    left: 4px; }
+  .paradigm-list-item .__percent_input {
+    left: 14px;
+    width: 20px;
+    padding-right: 4px;
+    padding-left: 4px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    border: 2px solid darkgray;
+    border-top: white;
+    border-bottom: white; }
+  .paradigm-list-item .__risk_amount {
+    position: absolute;
+    top: 4px;
+    left: 62px;
+    text-align: center;
+    color: lightgrey;
+    width: 48px; }
+  .paradigm-list-item .__risk_amount_input {
+    position: absolute;
+    top: 11px;
+    left: 64px;
+    text-align: center;
+    color: lightgrey;
+    width: 48px;
+    border-bottom: 1px solid darkgrey; }
+  .paradigm-list-item .__multiplier {
+    margin-left: -2px;
+    color: lightgrey;
+    font-size: 9px; }
+  .paradigm-list-item .__risk_amount-label {
+    position: absolute;
+    top: 4px;
+    left: 92px; }
+  .paradigm-list-item .__risk_amount_main_input {
+    top: 11px;
+    left: 68px;
+    border-radius: 12px;
+    color: black; }
+  .paradigm-list-item .__percent_paradigm-label {
+    position: absolute;
+    top: 6px;
+    left: 136px;
+    z-index: 100;
+    color: #808080;
+    font-size: 9px; }
+  .paradigm-list-item .__percent_paradigm {
+    width: 42px;
+    left: 132px !important;
+    background-color: #191C29 !important; }
+  .paradigm-list-item .__lot_division {
+    width: 72px;
+    left: 198px !important;
+    font-weight: 100; }
+  .paradigm-list-item .__lot_sum {
+    font-weight: 400; }
+
+.__react_component_tooltip {
+  font-size: 11px !important; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.bg-grey {
+  background: rgba(220, 220, 220, 0.41); }
+
+.icon {
+  position: absolute;
+  right: 12px;
+  top: 7px; }
+
+.exchange-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center; }
+
+.rbitrage-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e2e2;
+  margin: 0 auto;
+  overflow-y: scroll; }
+  .rbitrage-section #exchanges {
+    height: 96px; }
+    .rbitrage-section #exchanges #buyOnBtn {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      cursor: pointer;
+      z-index: 1000; }
+    .rbitrage-section #exchanges .selection {
+      padding: 0 !important; }
+    .rbitrage-section #exchanges .mdl-menu__item--full-bleed-divider:hover {
+      border-bottom-left-radius: 12px; }
+    .rbitrage-section #exchanges #btrxBtn {
+      display: none; }
+    .rbitrage-section #exchanges .mdl-menu__container {
+      margin-top: -24px; }
+    .rbitrage-section #exchanges .mdl-menu__container.is-visible .mdl-menu__outline {
+      border-top-right-radius: 12px;
+      border-bottom-left-radius: 12px; }
+    .rbitrage-section #exchanges .mdl-menu {
+      padding-top: 24px;
+      padding-bottom: 0; }
+    .rbitrage-section #exchanges .exchange-sell-on {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      margin: 0;
+      padding: 0; }
+    .rbitrage-section #exchanges .exchange-icon {
+      margin-top: 24px;
+      line-height: 60px; }
+    .rbitrage-section #exchanges .btrx-icon {
+      display: none; }
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px; }
+
+.node text {
+  font: 12px sans-serif; }
+
+.link {
+  fill: none;
+  stroke: #4b4b4b;
+  stroke-width: 1px; }
+
+.react-stockcharts-edgeindicator text {
+  font-size: 10px; }
+
+.drawing-path {
+  fill: none;
+  stroke: rgba(100, 149, 237, 0.45);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+
+.bb {
+  border-bottom: 1px solid gainsboro; }
+
+.uppercase {
+  text-transform: uppercase !important; }
+
+.white {
+  color: white !important; }
+
+.text-light {
+  opacity: .5; }
+
+.text-dark {
+  color: #6A6A6A !important; }
+
+.text-white {
+  color: white !important; }
+
+.bg-white {
+  background: white !important;
+  background-color: white !important; }
+
+.h100 {
+  height: 100% !important; }
+
+li {
+  list-style: none; }
+
+label {
+  white-space: nowrap !important; }
+
+.radio-notice label {
+  white-space: pre-wrap !important;
+  color: red !important;
+  font-size: 11px !important; }
+
+.react-stockcharts-tooltip-label {
+  margin-left: 12px; }
+
+.title {
+  font-size: 16px; }
+
+#dropDownMenuParadigm {
+  min-height: 48px !important;
+  margin-bottom: 8px !important;
+  background: #ffffff; }
+
+#orderViewToggle {
+  min-height: 48px !important;
+  height: 48px; }
+
+.__p_menu_item {
+  height: 48px !important;
+  padding: 0 !important; }
+  .__p_menu_item div div {
+    text-align: center;
+    padding: 4px !important; }
+
+#balances {
+  min-height: 0 !important;
+  overflow: hidden; }
+
+.balances li {
+  padding: 0;
+  height: 12px;
+  margin-bottom: 0;
+  font-size: 11px; }
+.balances div {
+  width: 33%;
+  float: left;
+  height: 18px;
+  position: relative;
+  font-size: 11px; }
+
+#spreadsheet {
+  min-height: 12px; }
+
+td.cell.read-only {
+  background: #9e9e9e;
+  color: #FFFFFF !important; }
+  td.cell.read-only span.value-viewer {
+    text-align: center !important;
+    font-size: 11px !important; }
+
+.data-grid {
+  width: 100% !important; }
+
+.cell {
+  padding: 4px !important;
+  padding-right: 9px !important;
+  background: #FFFFFF !important;
+  color: #5E6275 !important; }
+
+span.value-viewer {
+  font-size: 9px; }
+
+.r-tooltip {
+  z-index: 1000; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */ }
+
+#sideBarWrapper .title {
+  font-size: 11px;
+  opacity: 0.65; }
+
+#snackbarBottom {
+  background: #ff8200; }
+
+#snackbarCloseBtn {
+  color: #6E8AF5 !important; }
+
+.copy {
+  cursor: copy !important; }
+
+.react-stockcharts-svgpathannotation {
+  cursor: pointer !important; }
+
+.foo {
+  color: rgba(100, 149, 237, 0.5); }
+
+.mdl-card {
+  background: #191C29 !important;
+  min-height: 12px !important; }
+
+.test-color {
+  colro: #ffff00; }
+
+#sideBarWrapper .mdl-card {
+  background: #191C29 !important; }
+#sideBarWrapper #balances.mdl-card {
+  background: #191C29 !important; }
+#sideBarWrapper #orderList.mdl-card {
+  background-color: #353849 !important; }
+#sideBarWrapper #orderInfo.mdl-card {
+  background: #191C29 !important; }
+#sideBarWrapper #balances #balances_wrapper {
+  background: #191C29 !important; }
+#sideBarWrapper #cancelBtns {
+  margin-bottom: 0 !important;
+  background: #191C29 !important; }
+
+.mdl-layout__drawer.right__sidebar {
+  float: right; }
+
+#dragToggles {
+  width: 240px; }
+
+.tal {
+  text-align: left !important; }
+
+.tar {
+  text-align: right !important; }
+
+.tac {
+  text-align: center !important; }
+
+#buySellContainer {
+  background: transparent !important; }
+  #buySellContainer .title {
+    line-height: 16px !important; }
+  #buySellContainer #buy, #buySellContainer #sell {
+    width: calc(50% - 4px) !important;
+    height: 394px;
+    float: left; }
+  #buySellContainer #buy {
+    margin-right: 8px; }
+  #buySellContainer #baseBalance,
+  #buySellContainer #baseMasterPercentage,
+  #buySellContainer #baseMasterPercentageSlider,
+  #buySellContainer #baseRisk {
+    width: 100%;
+    height: 36px;
+    background: #3F5D9B !important;
+    color: white; }
+  #buySellContainer .balance-span {
+    position: relative;
+    float: left;
+    width: calc(33% - 8px);
+    height: 36px; }
+  #buySellContainer #baseCurrencySpan {
+    width: 33%; }
+  #buySellContainer #baseCurrency, #buySellContainer #compSymbol {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    padding-top: 8px; }
+  #buySellContainer #baseMasterPercentage, #buySellContainer #baseRisk {
+    height: 28px !important; }
+    #buySellContainer #baseMasterPercentage .balance-span, #buySellContainer #baseRisk .balance-span {
+      position: relative;
+      float: left;
+      width: calc(40% - 8px);
+      height: 36px; }
+    #buySellContainer #baseMasterPercentage #baseMasterInputSpan, #buySellContainer #baseMasterPercentage #baskRiskDropDown, #buySellContainer #baseRisk #baseMasterInputSpan, #buySellContainer #baseRisk #baskRiskDropDown {
+      width: 18% !important; }
+  #buySellContainer #baseMasterInput {
+    width: 100%;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    text-align: center; }
+  #buySellContainer #baseRisk {
+    height: 28px !important; }
+  #buySellContainer #baseRiskAmount, #buySellContainer #paradigmDropDownMenu, #buySellContainer #paradigmDropDownMenuSell {
+    width: calc(50% - 8px) !important;
+    position: relative;
+    float: left; }
+  #buySellContainer #baseFibBtns {
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    bottom: 0;
+    left: 0; }
+  #buySellContainer #compBalance,
+  #buySellContainer #compMasterPercentage,
+  #buySellContainer #compMasterPercentageSlider,
+  #buySellContainer #compRisk {
+    width: 100%;
+    height: 36px;
+    background: #A3497C !important;
+    color: white; }
+  #buySellContainer .balance-span {
+    position: relative;
+    float: left;
+    width: calc(33% - 8px);
+    height: 36px; }
+  #buySellContainer #compCurrencySpan {
+    width: 33%; }
+  #buySellContainer #compCurrency, #buySellContainer #compSymbol {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    padding-top: 8px; }
+  #buySellContainer #compMasterPercentage, #buySellContainer #compRisk {
+    height: 28px !important; }
+    #buySellContainer #compMasterPercentage .balance-span, #buySellContainer #compRisk .balance-span {
+      position: relative;
+      float: left;
+      width: calc(40% - 8px);
+      height: 36px; }
+    #buySellContainer #compMasterPercentage #compMasterInputSpan, #buySellContainer #compMasterPercentage #baskRiskDropDown, #buySellContainer #compRisk #compMasterInputSpan, #buySellContainer #compRisk #baskRiskDropDown {
+      width: 18% !important; }
+  #buySellContainer #compMasterInput {
+    width: 100%;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    text-align: center; }
+  #buySellContainer #compRisk {
+    height: 28px !important; }
+  #buySellContainer #compRiskAmount, #buySellContainer #paradigmDropDownMenu, #buySellContainer #paradigmDropDownMenuSell {
+    width: calc(50% - 8px) !important;
+    position: relative;
+    float: left; }
+  #buySellContainer #compFibBtns {
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    bottom: 0;
+    left: 0; }
+
+.float-wrapper {
+  margin-bottom: 0;
+  border: 5px solid red;
+  position: static;
+  font: 16px/1.4 small-caps normal normal Georgia;
+  columns: 2 auto; }
+
+.bb {
+  border-bottom: 1px solid white; }
+
+.display-none {
+  display: none !important; }
+
+#autoTrade {
+  height: 96px;
+  margin-top: 8px;
+  padding: 12px; }
+
+.order-history-selected {
+  fill: #FF8200 !important;
+  color: cornflowerblue; }
+
+.cancel-order-btn {
+  color: white !important; }
+
+input[type="range" i] {
+  -webkit-appearance: slider-horizontal;
+  color: #a900ff !important;
+  cursor: default;
+  padding: initial;
+  border: initial;
+  margin: 2px; }
+
+#range {
+  width: 180px;
+  height: 4px;
+  border: 0;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  outline: none; }
+
+#range .ui-slider-handle {
+  position: absolute;
+  margin: -6px 0 0 -17px;
+  border-radius: 100px;
+  background: #158789;
+  color: #fff;
+  border: 0;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 34px;
+  outline: none;
+  cursor: pointer;
+  font-size: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.1s ease; }
+
+#range .ui-slider-handle:hover,
+#range .ui-slider-handle:focus {
+  transform: scale(1.1); }
+
+#range .ui-slider-range {
+  background: #69b6b5; }
+
+.cntr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,20 @@
+>> Orders loading indication spinner (buying, selling, cancelling,, or "moving")
+Remains spinning until resolved (or canceled by user)
+All placed orders are being adjusted should show their transitional period.
+EG
+original order placement has a spinner until order is canceled.
+new order placement has a spinner until order is placed.
+
+>> Need Master Slave percentage.
+
+>> Buy / sell remember
+- last settings. (my buy was mater 20%, slave 5%)
+- last paradigm selected
+
+
+>> Coin to (buy/sell) lights up along with the buy or sell tab
+
+>> Dust suggestion
+Fib lines perform checks to see "if dust". If yes, grey out so user is not a retard.
+
+>> Fib lines only exist where buy/sell orders exist

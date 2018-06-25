@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">-->
+
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-orange.min.css" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/edge.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/index.css">
+
+
+  <!--
+    manifest.json provides metadata used when your web app is added to the
+    homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+  -->
+
+
+  <!--
+    Notice the use of %PUBLIC_URL% in the tags above.
+    It will be replaced with the URL of the `public` folder during the build.
+    Only files inside the `public` folder can be referenced from the HTML.
+
+    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+    work correctly both with client-side routing and a non-root public URL.
+    Learn how to configure a non-root public URL by running `npm run build`.
+  -->
+  <title>Street Fighter</title>
+
+</head>
+<body>
+
+<div id="snackbarBottom" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button id="snackbarCloseBtn" class="mdl-snackbar__action" type="button">Close</button>
+</div>
+
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header id="mainHeader" class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+
+      <!-- Market Symbol -->
+      <span id="marketSymbol" class="mdl-layout-title">...</span>
+
+      <div id="chartInterval" class="mdl-card mdl-shadow--2dp radio-card pt12 pl8 mr24"></div>
+
+      <div class="mdl-layout-spacer"></div>
+
+      <div id="refreshDataBtn">
+
+      </div>
+
+      <div class="mdl-layout-spacer"></div>
+
+      <span id="user" class="mdl-layout-title">...</span>
+
+    </div>
+  </header>
+
+  <!-- Left Drawer -->
+  <div class="mdl-layout__drawer pt12">
+
+    <div id="allMarkets" class="">
+
+    </div>
+
+  </div>
+
+
+  <!--  CONTAINER -->
+
+  <main class="mdl-layout__content h100">
+    <div id="app" class="page-content h100">
+      <!-- Your content goes here -->
+
+      <div id="chartWrapper">
+
+        <div id="chart" class="mdl-card mdl-shadow--2dp">
+
+        </div>
+
+      </div>
+
+      <div id="sideBarWrapper">
+
+        <div id="buySellContainer">
+
+          <div id="buy" class="mdl-card mdl-shadow--2dp">
+
+
+            <div id="baseBalance" class="pt4">
+
+              <div class="balance-span pl8 tal">
+                <div class="title">Available:</div>
+
+                <div id="baseBalanceAvailable" class="title">
+
+                </div>
+
+              </div>
+
+              <div id="baseCurrencySpan" class="balance-span pl0">
+
+                <div id="baseCurrency" class="title">
+
+                </div>
+
+              </div>
+
+              <div class="balance-span pr8 tar">
+
+                <div class="title">Balance:</div>
+
+                <div id="baseBalanceBalance" class="title">
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div id="baseMasterPercentage">
+
+              <div class="balance-span pt4 pl8 tal">
+                <div class="title">Buy max with</div>
+              </div>
+
+              <div id="baseMasterInputSpan" class="balance-span pos-rel">
+
+              </div>
+
+              <div class="balance-span pt4 pl12 tal">
+                <div class="title">% in account</div>
+              </div>
+
+            </div>
+
+            <div id="baseRisk" class="pt4">
+
+              <div id="baseRiskAmount" class="balance-span pt4 pl8 tal">
+
+              </div>
+
+              <div id="paradigmDropDownMenu">
+
+
+              </div>
+
+            </div>
+
+
+            <div id="baseFibBtns">
+
+            </div>
+
+            <div id="basePercentBtns">
+
+            </div>
+
+            <div id="baseSlaveInput">
+
+            </div>
+
+          </div>
+
+          <div id="sell" class="mdl-card mdl-shadow--2dp">
+
+
+            <div id="compBalance" class="pt4">
+
+              <div class="balance-span pl8 tal">
+                <div class="title">Available:</div>
+                <div id="compBalanceAvailable" class="title">
+
+                </div>
+
+              </div>
+
+
+              <div id="compCurrencySpan" class="balance-span pl0">
+
+                <div id="compCurrency" class="title">
+
+                </div>
+
+              </div>
+
+              <div class="balance-span pr8 tar">
+
+                <div class="title">Balance:</div>
+                <div id="compBalanceBalance" class="title">
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div id="compMasterPercentage">
+
+              <div class="balance-span pt4 pl8 tal">
+                <div class="title">Sell max with </div>
+              </div>
+
+              <div id="compMasterInputSpan" class="balance-span pos-rel">
+
+              </div>
+
+
+
+
+              <div class="balance-span pt4 pl12 tal">
+                <div class="title">% in account</div>
+              </div>
+
+            </div>
+
+            <div id="compRisk" class="pt4">
+
+              <div id="compRiskAmount" class="balance-span pt4 pl8 tal">
+
+              </div>
+
+              <div id="paradigmDropDownMenuSell">
+
+
+              </div>
+
+            </div>
+
+
+            <div id="compFibBtns">
+
+            </div>
+
+            <div id="compPercentBtns">
+
+            </div>
+
+            <div id="compSlaveInput">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="spreadsheet" class="mdl-card mdl-shadow--2dp">
+
+        </div>
+
+        <div id="ordersWrapper" class="mdl-card mdl-shadow--2dp">
+
+          <div id="orderList" class="mdl-card mdl-shadow--2dp">
+            <!-- order list rendered here-->
+
+          </div>
+
+          <div id="orderInfo" class="mdl-card mdl-shadow--2dp">
+            <!-- order info rendered here-->
+
+          </div>
+
+        </div>
+
+        <div id="cancelBtns" class="mdl-card mdl-shadow--2dp mt8">
+
+        </div>
+
+        <div id="autoTrade" class="mdl-card mdl-shadow--2dp">
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </main>
+
+</div>
+
+</body>
+
+
+
+</html>

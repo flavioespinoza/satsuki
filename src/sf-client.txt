@@ -1,0 +1,7 @@
+echo off
+cd C:\Users\Jeremiah\WebstormProjects\street-fighter-client
+git checkout master
+git pull origin master
+git commit -m 'merged origin master'
+call npm install
+call npm start

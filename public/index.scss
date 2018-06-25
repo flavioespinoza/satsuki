@@ -1,0 +1,867 @@
+$color: #9e9e9e;
+$color1: #5E6275 !important;
+$color2: #6E8AF5 !important;
+$color3: #C0C5E2 !important;
+$color4: #8d90a6 !important;
+$color5: #3a4062 !important;
+
+$buy: #3F5D9B !important;
+$sell: #A3497C !important;
+
+$colorBackground: #363d56 !important;
+$colorDark: #191C29 !important;
+$white: #FFFFFF !important;
+
+
+html {
+    color: #9699b0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    color: #9699b0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 4px 13px;
+}
+
+li {
+    padding: 2px;
+}
+
+#mainHeader {
+    background: $colorDark;
+}
+
+.fr {
+    float: right;
+}
+
+.loading {
+    text-align: center;
+    padding: 12px;
+}
+
+.header {
+    padding-left: 12px;
+    background-color: #607d8b;
+    color: white;
+}
+
+#chartWrapper {
+    width: calc(100% - 428px) !important;
+    height: calc(100% - 8px) !important;
+    float: left;
+    padding-left: 8px;
+    padding-top: 8px;
+    background: $colorBackground;
+}
+
+#sideBarWrapper {
+    position: absolute;
+    right: 0 !important;
+    top: 0 !important;
+    width: 420px;
+    height: calc(100% - 8px) !important;
+    padding-top: 8px;
+    background: $colorBackground;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#chartControls {
+    width: 100% !important;
+}
+
+#buySellContainer,
+#autoTrade,
+#balances,
+#spreadsheet,
+#cancelBtns,
+#controlButtons,
+#orderViewToggle,
+#ordersWrapper,
+#dropDownMenuParadigm,
+#spreadsheet {
+    width: 405px;
+    margin-left: 8px;
+    float: left;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+#controlButtons {
+    height: 119px !important;
+}
+
+#orderViewToggle {
+    min-height: 10px !important;
+}
+
+$orderHeight: 300px;
+
+#ordersWrapper {
+    position: relative;
+    height:$orderHeight;
+    margin-bottom: 0 !important;
+    background: #696d80 !important;
+}
+
+#orderList, #orderInfo {
+    position: absolute;
+    top: 0;
+    width: 194px;
+    height: $orderHeight;
+    float: left;
+    overflow-y: scroll;
+}
+
+#orderList {
+    left: 8px;
+    top: 8px;
+    height: $orderHeight - 20px;
+}
+
+.mdl-list__item {
+    margin-bottom: 4px;
+}
+
+#orderInfo {
+    right: 0;
+    ul {
+        li:first-child {
+            div.order-info-content {
+                font-size: 9px !important;
+            }
+        }
+    }
+}
+
+.btn-controls {
+    width: calc(54% - 42px) !important;
+    margin: 11px;
+}
+
+#orderSide {
+    width: 100%;
+}
+
+.order-list, .order-info {
+    border-top: 1px solid gainsboro;
+    padding: 0 !important;
+    width: 168px;
+    height: 320px;
+    float: left;
+    overflow-y: scroll;
+}
+
+.order-info {
+    border-left: 1px solid gainsboro;
+}
+
+#orders, #orderHistory {
+    width: 336px;
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid gainsboro;
+}
+
+.order-list-item {
+    width: 90%;
+    border-bottom: none !important;
+}
+
+.order-list-text {
+    font-size: 9px;
+}
+
+.order-list-info {
+    float: left;
+    height: 12px;
+    font-size: 11px;
+    line-height: 17px;
+    margin-left: 8px
+}
+
+.order-wrapper {
+    position: relative;
+    height: 24px;
+}
+
+.order-selected-sell {
+    font-family: "Helvetica Neue";
+    background-color: rgba(255, 105, 180, 0.50);
+    color: white;
+    .order-list-item {
+        color: white !important;
+    }
+    .cancel-order-btn {
+        color: white !important;
+    }
+}
+
+.order-selected-buy {
+    background-color: rgba(100, 149, 237, 0.50);
+    color: white;
+    .order-list-item {
+        color: white !important;
+    }
+    .cancel-order-btn {
+        color: white !important;
+    }
+}
+
+.cancel-pending {
+    opacity: .15;
+}
+
+.cancel-order-btn {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.mdl-list__item {
+    font-size: 9px !important;
+    padding: 4px !important;
+    min-height: 24px !important;
+    max-height: 24px !important;
+    color: $color;
+    div  {
+        padding-left: 18px;
+        width: 100%;
+        color: white;
+    }
+
+}
+
+label {
+    color: $color;
+}
+
+.order-list-item {
+    cursor: pointer;
+    height: 24px !important;
+}
+
+.mdl-button .material-icons {
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.r-button {
+    div {
+        div {
+            div {
+                margin-right: 6px !important;
+            }
+        }
+    }
+
+}
+
+.radio-card {
+    width: 60% !important;
+    min-height: 48px !important;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.radio {
+    width: 96px !important;
+    font-size: 0.64em !important;
+    float: left;
+    padding-left: 12px !important;
+    div {
+        div {
+            div {
+                svg {
+                    path {
+                        fill: $color;
+                    }
+                }
+            }
+        }
+    }
+}
+.radio-notice {
+    width: 96px !important;
+    font-size: 0.64em !important;
+    float: left;
+    padding-left: 12px !important;
+    div {
+        div {
+            div {
+                svg {
+                    path {
+                        fill: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#marketSymbol {
+    display: inline-block;
+    width: 96px;
+    text-align: center;
+}
+.market-notice-header {
+    background-color: red !important;
+    #user {
+        color: white !important;
+    }
+}
+
+.market-notice-title {
+    color: white !important;
+    //color: red !important;
+    //background: #ffffff;
+    //padding: 6px;
+}
+.market-notice-warning {
+    color: white !important;
+    //background: #ffffff;
+    font-size: 14px;
+    //padding: 6px;
+}
+.delisted {
+    padding: 12px;
+}
+
+#chartInterval {
+    margin-left: 42px;
+    width: 498px !important;
+
+    border-radius: 0;
+    padding: 0 !important;
+    min-height: 24px !important;
+    height: 24px !important;
+    margin-bottom: 0 !important;
+    background: gainsboro !important;
+    .radio {
+        width: 56px !important;
+        padding-right: 12px;
+        border-left: 1px solid #4b4b4b;
+    }
+}
+
+.side-group {
+    border-top: 1px solid gainsboro;
+    padding-left: 12px;
+    .radio {
+        cursor: pointer;
+        overflow: visible;
+        display: table;
+        height: 24px;
+        width: 108px !important;
+        background: white;
+        margin-bottom: 6px;
+        font-size: 11px;
+        border-radius: 2px;
+        padding-left: 8px !important;
+    }
+}
+
+#allMarkets {
+    .radio {
+        padding-bottom: 6px;
+        padding-top: 6px;
+        width: calc(100% - 12px) !important;
+        font-size: 14px !important;
+        border-bottom: 1px solid gainsboro;
+        margin-left: 12px !important;
+        padding-left: 0 !important;
+    }
+    .radio-notice {
+        padding-bottom: 6px;
+        padding-top: 6px;
+        width: calc(100% - 12px) !important;
+        font-size: 14px !important;
+        color: red !important;
+        border-bottom: 1px solid red;
+        margin-left: 12px !important;
+        padding-left: 0 !important;
+    }
+}
+
+
+
+
+#chart {
+    width: 100% !important;
+    height: calc(100% - 8px) !important;
+}
+
+
+
+
+
+
+.paradigm-group, .side-group {
+    padding-top: 8px;
+    width: calc(100% - 8px) !important;
+    overflow: hidden;
+}
+
+.paradigm-list-item {
+    width: 100%;
+    height: 28px;
+    overflow: hidden;
+
+    .input {
+        width: 25%;
+        height: 20px;
+        text-align: right;
+        padding-right: 4px;
+        background: gainsboro;
+        border: 1px solid darkgray;
+    }
+
+    #inputPrcent_0, #inputAmount_0 {
+        background: white;
+        border: 1px solid white;
+    }
+
+    .__percent_input-label {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+
+    .__percent_input {
+        left: 14px;
+        width: 20px;
+        padding-right: 4px;
+        padding-left: 4px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        text-align: center;
+        background: white;
+        border: 2px solid darkgray;
+        border-top: white;
+        border-bottom: white;
+    }
+
+    .__risk_amount {
+        position: absolute;
+        top: 4px;
+        left: 62px;
+        text-align: center;
+        color: lightgrey;
+        width: 48px;
+    }
+
+    .__risk_amount_input {
+        position: absolute;
+        top: 11px;
+        left: 64px;
+        text-align: center;
+        color: lightgrey;
+        width: 48px;
+        border-bottom: 1px solid darkgrey;
+    }
+
+    .__multiplier {
+        margin-left: -2px;
+        color: lightgrey;
+        font-size: 9px;
+    }
+
+    .__risk_amount-label {
+        position: absolute;
+        top: 4px;
+        left: 92px;
+    }
+
+    .__risk_amount_main_input {
+        top: 11px;
+        left: 68px;
+        border-radius: 12px;
+        color: black;
+    }
+
+    .__percent_paradigm-label {
+        position: absolute;
+        top: 6px;
+        left: 136px;
+        z-index: 100;
+        color: #808080;
+        font-size: 9px;
+    }
+
+    .__percent_paradigm {
+        width: 42px;
+        left: 132px !important;
+        background-color: $colorDark;
+    }
+
+    .__lot_division {
+        width: 72px;
+        left: 198px !important;
+        font-weight: 100;
+    }
+
+    .__lot_sum {
+        font-weight: 400;
+    }
+
+}
+
+.__react_component_tooltip {
+    font-size: 11px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bg-grey {
+    background: rgba(220, 220, 220, 0.41);
+}
+
+.icon {
+    position: absolute;
+    right: 12px;
+    top: 7px;
+}
+
+.exchange-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.rbitrage-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #e2e2e2;
+    margin: 0 auto;
+    overflow-y: scroll;
+
+    #exchanges {
+        height: 96px;
+
+        #buyOnBtn {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .selection {
+            padding: 0 !important;
+        }
+        .mdl-menu__item--full-bleed-divider:hover {
+            border-bottom-left-radius: 12px;
+        }
+        #btrxBtn {
+            display: none;
+        }
+        .mdl-menu__container {
+            margin-top: -24px;
+        }
+        .mdl-menu__container.is-visible .mdl-menu__outline {
+            border-top-right-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+        .mdl-menu {
+            padding-top: 24px;
+            padding-bottom: 0;
+        }
+        .exchange-sell-on {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            margin: 0;
+            padding: 0;
+        }
+        .exchange-icon {
+            margin-top: 24px;
+            line-height: 60px;
+        }
+        .btrx-icon {
+            display: none;
+        }
+        .cxio-icon {
+
+        }
+        .krkn-icon {
+
+        }
+        .gdax-icon {
+
+        }
+        .gmni-icon {
+
+        }
+        .plnx-icon {
+
+        }
+    }
+}
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.node text {
+    font: 12px sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #4b4b4b;
+    stroke-width: 1px;
+}
+
+.react-stockcharts-edgeindicator {
+    text {
+        font-size: 10px;
+    }
+}
+
+.drawing-path {
+    fill: none;
+    stroke: rgba(100, 149, 237, 0.45);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.bb {
+    border-bottom: 1px solid gainsboro;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.white {
+    color: white !important;
+}
+
+.text-light {
+    opacity: .5;
+}
+.text-dark {
+    color: #6A6A6A !important;
+}
+.text-white {
+    color: white !important;
+}
+
+.bg-white {
+    background: white !important;
+    background-color: white !important;
+}
+
+.h100 {
+    height: 100% !important;
+}
+
+li {
+    list-style: none;
+}
+
+label {
+    white-space: nowrap !important;
+}
+.radio-notice {
+    label {
+        white-space: pre-wrap !important;
+        color: red !important;
+        font-size: 11px !important;
+    }
+}
+
+.react-stockcharts-tooltip-label {
+    margin-left: 12px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+
+
+#dropDownMenuParadigm {
+    min-height: 48px !important;
+    margin-bottom: 8px !important;
+    background: #ffffff;
+}
+
+#orderViewToggle {
+    min-height: 48px !important;
+    height: 48px;
+}
+
+.__p_menu_item {
+    height: 48px !important;
+    padding: 0 !important;
+    div {
+        div {
+            text-align: center;
+            padding: 4px !important;
+        }
+    }
+}
+
+#balances {
+    min-height: 0 !important;
+    //padding-bottom: 12px;
+    overflow: hidden;
+}
+
+.balances {
+
+    li {
+        padding: 0;
+        height: 12px;
+        margin-bottom: 0;
+        font-size: 11px;
+    }
+    div {
+        width: 33%;
+        float: left;
+        height: 18px;
+        position: relative;
+        font-size: 11px;
+    }
+}
+
+#spreadsheet {
+    min-height: 12px;
+    //background: lightgreen;
+}
+
+td.cell.read-only {
+    background:$color;
+    color: $white;
+    span.value-viewer {
+        text-align: center !important;
+        font-size: 11px !important;
+    }
+}
+
+.data-grid {
+    width: 100% !important;
+}
+
+.cell {
+    padding: 4px !important;
+    padding-right: 9px !important;
+    background: $white;
+    color: $color1;
+}
+
+span.value-viewer {
+    font-size: 9px;
+}
+
+.r-tooltip {
+    z-index: 1000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+#sideBarWrapper {
+    .title {
+        font-size: 11px;
+        opacity: 0.65;
+    }
+}
+
+#snackbarBottom {
+    background: #ff8200;
+}
+
+
+//.mdl-snackbar__text {
+//    color: #535353 !important;
+//}
+
+#snackbarCloseBtn {
+    color: $color2
+}
+
+.copy {
+    cursor: copy !important;
+}
+
+.react-stockcharts-svgpathannotation {
+    cursor: pointer !important;
+}
+
+.foo {
+    color: rgba(100, 149, 237, 0.50);
+}
+
+
+.mdl-card {
+    background: $colorDark;
+    min-height: 12px !important;
+}
+
+.test-color {
+    colro: #ffff00;
+}
+
+#sideBarWrapper {
+    .mdl-card {
+        background: $colorDark;
+    }
+    #balances.mdl-card {
+        background: $colorDark;
+    }
+    #orderList.mdl-card {
+        background-color: #353849 !important;
+    }
+    #orderInfo.mdl-card {
+        background: $colorDark;
+    }
+    #balances {
+        #balances_wrapper {
+            background: $colorDark;
+        }
+    }
+    #cancelBtns {
+        margin-bottom: 0 !important;
+        background: $colorDark;
+    }
+}
+
+.mdl-layout__drawer.right__sidebar {
+    float: right;
+}
+
+#dragToggles {
+    width: 240px;
+}
+
+@import "right-sidebar";
+

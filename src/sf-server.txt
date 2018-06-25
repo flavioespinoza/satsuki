@@ -1,0 +1,8 @@
+echo off
+taskkill /im node.exe /F
+cd C:\Users\Jeremiah\WebstormProjects\street-fighter-sheets
+git checkout master
+git pull origin master
+git commit -m 'merged origin master'
+call npm install
+call npm start
